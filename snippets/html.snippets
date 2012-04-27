@@ -131,8 +131,8 @@ snippet base
 snippet r
 	<br`Close()[1:]`>
 snippet div
-	<div id="${1:name}">
-		${2}
+	<div id="${1:name}" class="${2}">
+		${3}
 	</div>
 # Embed QT Movie
 snippet movie
@@ -155,8 +155,8 @@ snippet fieldset
 		${3}
 	</fieldset>
 snippet form
-	<form action="${1:`Filename('$1_submit')`}" method="${2:get}" accept-charset="utf-8">
-		${3}
+	<form action="${1:`Filename('$1_submit')`}" method="${2:get}" accept-charset="utf-8" class="${3}">
+		${4}
 
 
 	<p><input type="submit" value="Continue &rarr;"`Close()`></p>
